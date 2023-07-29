@@ -1,10 +1,19 @@
 import React from "react";
+import "./yourBotArmy.css"
 
-function YourBotArmy({ bots }) {
+function YourBotArmy({ bots, setBots }) {
+    function handleRemove(id) {
+      const updatedBots = bots.filter((bot) => bot.id !== id);
+      setBots(updatedBots);
+    }
+
+
+
+
     return (
-        <div>
+        <div className="bot-army-container">
             {bots.map((botArmy) => (
-                <div key={botArmy.id} className="bott-box">
+                <div key={botArmy.id} className="bott-box-army" onClick={() => handleRemove(botArmy.id)}>
                     <img src={botArmy.avatar_url} alt="" />
                     <h1>Name: {botArmy.name}</h1>
                     <h2>Health: {botArmy.health}</h2>

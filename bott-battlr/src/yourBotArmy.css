@@ -1,0 +1,52 @@
+.bot-army-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.bott-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bott-box:hover {
+  transform: translateY(-4px);
+}
+
+.bott-box img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.bott-box h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.bott-box h2,
+.bott-box h3 {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.bott-box h3 {
+  color: #666666;
+}
+
+/* Update the background color for a more professional look */
+.bott-box {
+  background-color: #ffffff;
+}

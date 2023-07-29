@@ -6,8 +6,13 @@ function BottCollection({ setSelectedBots }) {
   const { data } = useFetch('http://localhost:3000/bots');
 
   function handleClick(bot) {
-    setSelectedBots(prevSelectedBots => [...prevSelectedBots, bot]);
+    setSelectedBots(prevSelectedBots => {
+      return prevSelectedBots.some(selectedBot => selectedBot.id === bot.id)
+        ? prevSelectedBots
+        : [...prevSelectedBots, bot];
+    });
   }
+  
 
   return (
     <div className="bott-container">
