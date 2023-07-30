@@ -46,7 +46,77 @@
   color: #666666;
 }
 
-/* Update the background color for a more professional look */
+
 .bott-box {
   background-color: #ffffff;
+}
+
+.bot-army-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.initialDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bott-box-army {
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.bott-box-army img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bott-box-army h1,
+.bott-box-army h2,
+.bott-box-army h3 {
+  margin: 5px;
+  color: #333;
+}
+
+.bott-box-army h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bott-box-army h2 {
+  font-size: 16px;
+}
+
+.bott-box-army h3 {
+  font-size: 14px;
+}
+
+.bott-box-army button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.bott-box-army button:hover {
+  background-color: #c0392b;
 }
